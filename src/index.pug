@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="styles.css")
+    title Makeup!
+  body
+    h1
+      | MAKEUP PALETTES 
+      small Hover on any palette...
+
+    .main-content
+      .palette__wrapper
+        .palette.palette--one
+          .palette__cover
+            .palette__cover__border
+              span Yellow Flicker Beat.
+            .palette__cover__top
+          .palette__base
+            - for (var i=0; i<5; i++)
+              .palette__shade
+                h4 Yellow Flicker Beat
+                small Lorde
+
+      .palette__wrapper
+        .palette.palette--two
+          .palette__cover 
+            .palette__cover__border
+              span Four Pink Walls.
+            .palette__cover__top
+          .palette__base
+            - for (var i=0; i<4; i++)
+              .palette__shade
+                h4 Four Pink Walls
+                small Alessia Cara
+
+      .palette__wrapper
+        .palette.palette--three
+          .palette__cover 
+            .palette__cover__border
+              span Blue on blue.
+            .palette__cover__top
+          .palette__base
+            - for (var i=0; i<8; i++)
+              .palette__shade
+                h4 Blue on Blue
+                small James Blunt
+
+      .palette__wrapper
+        .palette.palette--four
+          .palette__cover 
+            .palette__cover__border
+              span Little Black Dress.
+            .palette__cover__top
+          .palette__base
+            - for (var i=0; i<5; i++)
+              .palette__shade
+                h4 Little Black Dress
+                small Sara Bareilles
+
+    aside.context
+      .explanation
+        | Based on songs by four very awesome singer-songwriters :)
+        br
+        | Part of the 
+        a(href="https://codepen.io/collection/DQvYpQ/" target="_blank") CSS Grid collection here
+        | .
+
+    footer
+      a(href="https://twitter.com/meowlivia_" target="_blank")
+        i.icon-social-twitter.icons
+      a(href="https://github.com/oliviale" target="_blank")
+        i.icon-social-github.icons
+      a(href="https://dribbble.com/oliviale" target="_blank")
+        i.icon-social-dribbble.icons

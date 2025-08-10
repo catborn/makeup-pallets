@@ -1,0 +1,24 @@
+{
+  "name": "makeup-pallets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:pug": "pug src/index.pug -o dist/",
+    "build:scss": "sass src/styles.scss dist/styles.css",
+    "build": "npm run build:pug && npm run build:scss",
+    "watch:pug": "pug -w src/index.pug -o dist/",
+    "watch:scss": "sass --watch src/styles.scss dist/styles.css",
+    "dev": "npm run build && npm run watch:pug & npm run watch:scss",
+    "serve": "npx live-server dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.90.0"
+  }
+}
